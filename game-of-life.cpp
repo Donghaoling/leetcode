@@ -4,6 +4,7 @@ public:
         if(a <= b) return a;
         else return b;
     }
+    //borad用来记录每个cell的状态，每个cell有两位，低位是当前的状态，高位是一个单位时间后的状态，开始的状态是00或01，之后会变成00,10,11,01四个状态
     int liveNum(vector<vector<int>>& board, int i, int j, int m, int n) {
         int lives = 0;
         for(int a = max(i-1, 0); a <= min(i+1, m-1); ++a) {
