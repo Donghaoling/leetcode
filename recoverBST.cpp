@@ -20,7 +20,7 @@ public:
         if(firstNode == NULL && preNode->val >= root->val) {
             firstNode = preNode;
         }
-        if(firstNode != NULL & preNode->val >= root->val) {
+        if(firstNode != NULL && preNode->val >= root->val) {
             secondNode = root;
             //return;
         }
